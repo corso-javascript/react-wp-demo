@@ -1,0 +1,8 @@
+{
+  "private": "only server see it",
+  "another": "secret api key",
+  "public": {
+    "version": "build 312",
+    "ga": 321
+  }
+}
