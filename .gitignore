@@ -3,3 +3,4 @@ node_modules/
 *.log
 *.map
 *.DS_Store
+configs/production.json
