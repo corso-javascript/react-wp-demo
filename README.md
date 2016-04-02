@@ -1,6 +1,15 @@
 # React Isomorphic Minimal
 
+Example how to access to WP REST api with JavaScript ES6 + React
+
 A minimal boilerplate for https://corso-javascript.it based on React Isomorphic Starterkit, see `package.json`
+
+Run in development with:
+
+```
+npm install
+npm run watch
+```
 
 Run in production with:
 
