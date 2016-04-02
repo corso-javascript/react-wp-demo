@@ -57,7 +57,9 @@ try {
 	router.get('/', function *(next) {
 		const webserver = process.env.NODE_ENV === "production" ? "" : "//" + hostname + ":8080";
 
-		let reactString = ReactDOM.renderToStaticMarkup(<Main />)
+		// let reactString = ReactDOM.renderToStaticMarkup(<Main />)
+		let reactString = ''
+
 		let template = (
 			`
 			<!doctype html>
@@ -80,7 +82,7 @@ try {
 					<link rel="stylesheet" href="/styles.css">
 			  </head>
 			  <body>
-			    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+			    <div class="demo-layout mdl-layout mdl-js-layout mdl-color--grey-100">
 			      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
 			        <div class="mdl-layout__header-row">
 			          <span class="mdl-layout-title">Esempio App <small> - corso-javascript.it</small></span>
